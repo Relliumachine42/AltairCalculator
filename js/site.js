@@ -54,7 +54,7 @@ function multAll() {
 }
 function min() {
     let numberArray = document.getElementById('numberSeries').value.split('');
-    let minSeries = numberArray[0];
+    let minSeries = parseInt(numberArray[0]);
     for (let i = 1; i < numberArray.length; i++) {
         let number = parseInt(numberArray[i]);
         if (number < minSeries) {
@@ -65,7 +65,7 @@ function min() {
 }
 function max() {
     let numberArray = document.getElementById('numberSeries').value.split('');
-    let maxSeries = numberArray[0];
+    let maxSeries = parseInt(numberArray[0]);
     for (let i = 1; i < numberArray.length; i++) {
         let number = parseInt(numberArray[i]);
         if (number > maxSeries) {
